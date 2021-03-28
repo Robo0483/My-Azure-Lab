@@ -66,7 +66,7 @@ The playbook implements the following tasks:
 - Install Docker.io and Python Module.
 - Increase the virtual memory on the VMs.
 - Download and Lauch the ELK Container.
-- Enable the Ports for the ELK Container (5601, 9200, and 5044 ).
+- Enable the Ports for the ELK Container (5601, 9200, and 5044).
 - Enable the Docker service and ELK service to begin upon boot. 
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
@@ -96,6 +96,6 @@ In order to use the playbook, you will need to have an Ansible control node alre
 
 SSH into the control node and follow the steps below:
 
-- Copy the yml file (install-elk.yml) to /etc/ansible directory.
+- Copy the yml file `install-elk.yml` to `etc/ansible`.
 - Update the hosts file to include the (Elk) section and update in, in order to include all of the IPs in the network needed. 
-- Run the playbook, and navigate to the following URL http://elk_server_ip:5601 in order to check that the installation worked as expected.
+- Run the playbook, and navigate to the following URL `http://elk_server_ip:5601` in order to check that the installation worked as expected.
