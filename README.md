@@ -88,7 +88,7 @@ These Beats allow us to collect the following information from each machine: Fil
 
 Here's an example of Kibana Running
 
-![alt text](https://github.com/Robo0483/My-Azure-Lab/blob/main/Images/docker_ps_output.PNG)
+![alt text](https://github.com/Robo0483/My-Azure-Lab/blob/main/Images/Kibana%20Running.PNG)
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
