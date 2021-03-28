@@ -32,29 +32,30 @@ The configuration details of each machine may be found below.
 | Web-2    | Web App  | 10.0.0.6   | Linux            |
 | DVWA-3   | Web App  | 10.0.0.8   | Linux            |
 |----------|----------|------------|------------------|
-| ElkStack | Monitor  | 10.1.0.4   | Linux            |
+| ElkStack | ELK Stack| 10.1.0.4   | Linux            |
 
 ### Access Policies
 
 The machines on the internal network are not exposed to the public Internet. 
 
 Only the Jump Box, Elk Stack and Load Balancer machines can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
--Jump Box      40.78.132.43
--Elk Stack     20.84.73.186
--Load Balancer 20.80.64.14
 
-Machines within the network can only be accessed by my Personal Laptop IP:73.210.184.63.
+- Jump Box      40.78.132.43
+- Elk Stack     20.84.73.186
+- Load Balancer 20.80.64.14
+
+Machines within the network can only be accessed by my Personal Laptop IP on my Local Home Network.
 
 A summary of the access policies in place can be found in the table below.
 
 | Name and Ports           | Publicly Accessible | Allowed IP Addresses               |
 |--------------------------|---------------------|------------------------------------|
 | Jump Box via 22          | Yes                 | 10.0.0.5, 10.0.0.6 and 10.0.0.8    |
-| ElkStack via 5601        | Yes                 | 73.210.184.63 My Local Home Network|
+| ElkStack via 5601        | Yes                 | My Local Home Network              |
 | ElkStack via 22          | No                  | 10.0.0.4                           |
 | Web Servers via 22       | No                  | 10.0.0.4                           |
 | Web Servers via 80       | No                  | 20.80.64.14 Load Balancer          |
-| DVWA-Load Balancer via 80| Yes                 | 73.210.184.63 My Local Home Network|
+| DVWA-Load Balancer via 80| Yes                 | My Local Home Network              |
 
 ### Elk Configuration
 
@@ -62,11 +63,11 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 
 The playbook implements the following tasks:
 
-- ... Install Docker.io and Python Module.
-- ... Increase the virtual memory on the VMs.
-- ... Download and Lauch the ELK Container.
-- ... Enable the Ports for the ELK Container (5601, 9200, and 5044 ).
-- ... Enable the Docker service and ELK service to begin upon boot. 
+- . Install Docker.io and Python Module.
+- . Increase the virtual memory on the VMs.
+- . Download and Lauch the ELK Container.
+- . Enable the Ports for the ELK Container (5601, 9200, and 5044 ).
+- . Enable the Docker service and ELK service to begin upon boot. 
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
