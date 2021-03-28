@@ -63,11 +63,11 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 
 The playbook implements the following tasks:
 
-- . Install Docker.io and Python Module.
-- . Increase the virtual memory on the VMs.
-- . Download and Lauch the ELK Container.
-- . Enable the Ports for the ELK Container (5601, 9200, and 5044 ).
-- . Enable the Docker service and ELK service to begin upon boot. 
+- Install Docker.io and Python Module.
+- Increase the virtual memory on the VMs.
+- Download and Lauch the ELK Container.
+- Enable the Ports for the ELK Container (5601, 9200, and 5044 ).
+- Enable the Docker service and ELK service to begin upon boot. 
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
@@ -80,7 +80,7 @@ This ELK server is configured to monitor the following machines:
 - Web-2:  10.0.0.6
 - DVWA-3: 10.0.0.8
 
-We have installed the following Beats on these machines: 
+We have installed the following Beats on the ELK Server: 
 
 - Filebeat 
 - Metricbeat
